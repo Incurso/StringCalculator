@@ -1,0 +1,24 @@
+{
+  "name": "StringCalculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "add.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node add.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Incurso/StringCalculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Incurso/StringCalculator/issues"
+  },
+  "homepage": "https://github.com/Incurso/StringCalculator#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
