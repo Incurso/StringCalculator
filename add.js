@@ -5,9 +5,14 @@ function Add (numbers) {
     }
 
     // Check if string contains one number
-    console.log(numbers.indexOf(','))
-    if(numbers.indexOf(',') < 0) {
+    if (numbers.indexOf(',') < 0) {
         return parseInt(numbers)
+    } else {
+        nums = numbers.split(',')
+        
+        if (nums.length === 2) {
+            return parseInt(nums[0]) + parseInt(nums[1])
+        }
     }
 }
 
