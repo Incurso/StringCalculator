@@ -11,8 +11,14 @@ function Add (numbers) {
     // Split the string on commas and parse the value to int
     let nums = numbers.split(',').map(n => parseInt(n))
 
-    if (nums.length === 2) {
-      return nums[0] + nums[1]
+    if (nums.length > 1) {
+      let total = 0
+
+      for (let i = 0; i < nums.length; i++) {
+        total += nums[i]
+      }
+
+      return total
     }
   }
 }
