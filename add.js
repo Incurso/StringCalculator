@@ -12,6 +12,7 @@ function Add (numbers) {
     let nums = numbers.split(',').map(n => parseInt(n))
 
     if (nums.length > 1) {
+      /*
       let total = 0
 
       for (let i = 0; i < nums.length; i++) {
@@ -19,6 +20,8 @@ function Add (numbers) {
       }
 
       return total
+      */
+      return nums.reduce((a, b) => a + b)
     }
   }
 }
