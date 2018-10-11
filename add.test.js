@@ -21,3 +21,12 @@ it('Should return six', () => {
 it('Should return forty five', () => {
   expect(add('1,2,3,4,5,6,7,8,9')).toBe(45)
 })
+
+/* Step 3 */
+it('Should return six', () => {
+  expect(add('1\n2,3')).toBe(6)
+})
+
+it('Should return six', () => {
+  expect(add('1\n2\n3')).toBe(6)
+})
