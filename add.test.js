@@ -30,3 +30,20 @@ it('Should return six', () => {
 it('Should return six', () => {
   expect(add('1\n2\n3')).toBe(6)
 })
+
+/* Step 4 */
+it('Should throw error "Negatives not allowed: -1', () => {
+  const test = () => {
+    add('-1')
+  }
+
+  expect(test).toThrowError('Negatives not allowed: -1')
+})
+
+it('Should throw error "Negatives not allowed: -10', () => {
+  const test = () => {
+    add('1,-10')
+  }
+
+  expect(test).toThrowError('Negatives not allowed: -10')
+})
