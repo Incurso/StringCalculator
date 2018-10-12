@@ -7,10 +7,14 @@ function Add (numbers) {
     return 0
   }
 
-  // Check for custom delim
-  if (numbers.substr(0, 2) === '//') {
-    re = numbers.substr(2, numbers.indexOf('\n') - 2)
-    numbers = numbers.substr(numbers.indexOf('\n') + 1)
+  // Check for custom delimeter, string starts with //
+  if (numbers.match(/^\/\//)) {
+    // Split numbers from delimeter
+    let split = numbers.split('\n')
+    // Override regex with delimeter
+    re = split[0].substr(2)
+    // Put the numbers back
+    numbers = split[1]
   }
 
   // Split the string on commas and parse the values to int
