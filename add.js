@@ -9,11 +9,13 @@ function Add (numbers) {
   let nums = numbers.split(/[,\n]/).map(n => {
     let num = parseInt(n)
 
+    // Check if the number is negative
     if (num < 0) {
       negNums.push(num)
     }
 
-    return num
+    // Return the number as is if it is 1000 or lower otherwise return 0
+    return num <= 1000 ? num : 0
   })
 
   if (negNums.length > 0) {
