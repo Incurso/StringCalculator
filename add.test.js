@@ -32,7 +32,7 @@ it('Should return six', () => {
 })
 
 /* Step 4 */
-it('Should throw error "Negatives not allowed: -1', () => {
+it('Should throw error "Negatives not allowed: -1"', () => {
   const test = () => {
     add('-1')
   }
@@ -40,7 +40,7 @@ it('Should throw error "Negatives not allowed: -1', () => {
   expect(test).toThrowError('Negatives not allowed: -1')
 })
 
-it('Should throw error "Negatives not allowed: -10', () => {
+it('Should throw error "Negatives not allowed: -10"', () => {
   const test = () => {
     add('1,-10')
   }
@@ -48,10 +48,15 @@ it('Should throw error "Negatives not allowed: -10', () => {
   expect(test).toThrowError('Negatives not allowed: -10')
 })
 
-it('Should throw error "Negatives not allowed: -4,-5', () => {
+it('Should throw error "Negatives not allowed: -4,-5"', () => {
   const test = () => {
     add('2,-4,3,-5')
   }
 
   expect(test).toThrowError('Negatives not allowed: -4,-5')
+})
+
+/* Step 5 */
+it('Should return two', () => {
+  expect(add('1001,2')).toBe(2)
 })
