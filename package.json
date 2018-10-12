@@ -20,5 +20,8 @@
   "homepage": "https://github.com/Incurso/StringCalculator#readme",
   "devDependencies": {
     "jest": "^23.6.0"
+  },
+  "standard": {
+    "env": ["jest"]
   }
 }
