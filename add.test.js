@@ -47,3 +47,11 @@ it('Should throw error "Negatives not allowed: -10', () => {
 
   expect(test).toThrowError('Negatives not allowed: -10')
 })
+
+it('Should throw error "Negatives not allowed: -4,-5', () => {
+  const test = () => {
+    add('2,-4,3,-5')
+  }
+
+  expect(test).toThrowError('Negatives not allowed: -4,-5')
+})
