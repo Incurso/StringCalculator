@@ -60,3 +60,13 @@ it('Should throw error "Negatives not allowed: -4,-5"', () => {
 it('Should return two', () => {
   expect(add('1001,2')).toBe(2)
 })
+
+/* Step 6 */
+it('Should return 3', () => {
+  expect(add('//;\n1;2')).toBe(3)
+})
+
+it('Should return 42', () => {
+  expect(add('//hgttg\n20hgttg22')).toBe(42)
+})
+
